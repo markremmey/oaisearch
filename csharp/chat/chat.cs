@@ -31,7 +31,7 @@ namespace chat
 
             SearchClient client = getSearchClient();
 
-            Readretrieveread rrr = new Readretrieveread(client, "text-davinci-002","filename","something");
+            Readretrieveread rrr = new Readretrieveread(client, "gpt-35-turbo","filename","something");
 
             //string responseMessage = "This HTTP triggered function executed successfully. Pass a name in the query string or in the request body for a personalized response.";
             string result = await rrr.run(history, overrides);
